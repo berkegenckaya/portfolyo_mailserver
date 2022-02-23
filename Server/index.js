@@ -39,7 +39,9 @@ app.post("/" ,(req , res) => {
       });
 
 })
-
+app.get("/", (req,res)=>{
+    res.send("selam")
+})
 app.listen(process.env.PORT || 5000 , () => {
 });
 
