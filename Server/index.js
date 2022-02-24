@@ -8,6 +8,11 @@ const app = express();
 app.use(cors({ origin: "https://inthecasual.github.io", credentials: true }));
 app.use(express.json());
 
+app.use(res, req, (next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
+
 const transporter = nodemailer.createTransport({
   host: "smtp.office365.com",
   Port: 587,
