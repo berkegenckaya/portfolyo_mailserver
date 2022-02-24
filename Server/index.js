@@ -5,7 +5,7 @@ import nodemailer from "nodemailer";
 
 dotenv.config();
 const app = express();
-app.use(cors({ origin: "http://localhost:5500", credentials: false }));
+app.use(cors({ origin: "https://inthecasual.github.io", credentials: true }));
 app.use(express.json());
 
 const transporter = nodemailer.createTransport({
