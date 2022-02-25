@@ -2,5 +2,5 @@
 Mail server for contact us feature.
 
 Developed by 
-Berke Gençkaya
+Berke Gençkaya -
 Mert Akpınar
